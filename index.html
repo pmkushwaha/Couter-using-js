@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count</title>
+
+    <style>
+        .container {
+            display: flex;
+
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(238, 150, 17);
+            font-weight: bolder;
+            /* text-decoration: underline; */
+        }
+
+        .b_main {
+
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+        }
+
+        h2{
+            color: rgb(39, 36, 39);
+        }
+
+        .btn {
+            border-radius: 10px;
+            font-size: large;
+        }
+
+        #inc:hover {
+            background-color: green;
+            color: wheat;
+        }
+
+        #dec:hover {
+            background-color: rgb(36, 35, 33);
+            color: white;
+        }
+
+        #set:hover {
+            background-color: red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="main">
+            <h1>Number Counter</h1>
+            <hr>
+            <h2>Counting value: <span id="sum">0</span></h2>
+        </div>
+        <div class="b_main">
+
+            <button class="btn" id="inc" onclick="sum()">Increment</button>
+            <button class="btn" id="dec" onclick="min()">Decrement</button>
+            <button class="btn" id="set" onclick="reset()">Reset</button>
+        </div>
+    </div>
+    <script src="count.js">
+
+    </script>
+</body>
+
+</html>
